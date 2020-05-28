@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+   
+ <div>
+    <button id=botao1 style="height: 100px;width: 100px;border-bottom-style:solid;" onclick="mover()" ;></button>
+      </div>
+<br>
+ <div>
+     <button id=botao2 style="height: 100px; width: 100px;border-bottom-style:solid;" onclick="mover2()"></button>
+    </div>
+    <br>
+    <div>
+        <button id=botao3 style="height: 100px; width: 100px; border-bottom: solid; " onclick="mover3()"></button>
+    </div>
+    <br>
+    <button id=botao4 style="height: 100px; width: 100px; border-bottom: solid;" onclick="mover4()"></button>
+
+    <div style="position: absolute; top:100px; left: 150px;" id="xana">
+        <img src="https://www.imagensanimadas.com/data/media/1635/caminhada-imagem-animada-0052.gif ">
+
+    </div>
+   
+    <script type="text/javascript">
+         function açai() {
+             alert("ola ronan cabeçudo");
+         }
+        function mover() {
+            var i;
+            i = document.getElementById("xana");
+            i.style.top = parseInt(i.style.top.replace("px", "")) + 20 + "px";
+        }
+       function mover2() {
+            var e ;
+            e = document.getElementById("xana");
+            e.style.top = parseInt(e.style.top.replace("px","")) - 30 + "px";
+            
+        }
+        function mover3() {
+            var k;
+            k = document.getElementById("xana");
+            k.style.left = parseInt(k.style.left.replace("px","")) + 20 + "px";
+        }
+        function mover4(){
+            var f;
+            f = document.getElementById("xana");
+            f.style.left = parseInt(f.style.left.replace("px","")) - 30 + "px";
+        }
+
+    </script>
+</body>
+
+</html>
